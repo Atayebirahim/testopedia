@@ -1,0 +1,53 @@
+<script>
+      function verify() {
+        var pass1=document.getElementById("pass1").value;
+        var pass2=document.getElementById("pass2").value;
+
+        if(pass1==pass2) {
+            alert("your password is match");
+        }
+
+        else {
+            var incorrect=document.getElementById("incorrect");
+            incorrect.innerHTML="password incorrect";
+            //alert("You entered wrong password ");
+        }
+
+
+      }  
+
+
+</script>
+
+
+
+
+<style>
+    input {
+        margin-top:13px
+    }
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+<center>
+    <label>Enter password</label>&nbsp;&nbsp;
+        <input type="password" id="pass1">
+        <br>
+    <label>Re-type password</label>
+        <input type="password" id="pass2">
+        <br><br>
+        <div style="color: red;" id="incorrect"></div>
+        <br>
+    <input onclick="verify()" type="submit" value="verfy password">
+
+</center>
